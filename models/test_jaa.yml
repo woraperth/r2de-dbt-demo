@@ -1,0 +1,20 @@
+version: 2
+
+models:
+    - name: sales_table
+      description: "ตารางข้อมูลการขาย"
+      columns:
+          - name: Order_ID
+            description: "Primary Key"
+            tests:
+                - unique
+                - not_null
+
+    - name: popular_products
+      description: "สินค้าขายดี"
+      columns:
+          - name: product_group
+            description: "Primary Key"
+            tests:
+                - unique
+                - not_null
